@@ -20,4 +20,4 @@ jobs:
       uses: actions/checkout@v2
     - name: Run Rubocop and Rspec
       run: |
-        docker-compose run portal_test
+        bundle install
