@@ -1,0 +1,8 @@
+services:
+  portal_test:
+    <<: *app_default
+    container_name: portal_test
+    environment:
+      <<: *environment_dev
+      RAILS_ENV: test
+    entrypoint: /bin/sh -c "./scripts/entrypoint-test.sh"
